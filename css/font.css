@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'vodafone_rg';
+  src: url('../fonts/vodafoneRg.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'vodafone_lt';
+  src: url('../fonts/vodafoneLt.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'vodafone_bd';
+  src: url('../fonts/vodafoneRgBd.ttf'); /* IE9 Compat Modes */
+}
+
+
+
+
+.heading, .heading--light {
+  font-family: 'vodafone_lt';
+}
+
+
+
+.tabs__tab, .device-details__tariff-row .accordion__heading--active .button--tariff span {
+  font-family: 'vodafone_rg';
+}
+.tabs__tab--active {
+  font-family: 'vodafone_bd';
+}
+.spring, .grid, .grid__item, #footer .col-4, #footer .col-3, #footer .col-5, #footer .portlet-borderless-container, .hello {
+  font-family: 'vodafone_rg';
+}
+.voice_2, .voice_1, .voice_3, .voice_4, strong, .device-details--global .button--white-selected span {
+  font-family: vodafone_bd;
+}
+
+
+
+
+input[type='checkbox']:checked + .form__label--checkable::before {
+  content: "";
+  background-image: url("../img/check_on.png");
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  display: block;
+
+
+}
+input[type='checkbox'] + .form__label--checkable::before {
+  content: "";
+  background-image: url("../img/check_off.png");
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  display: block;
+
+}
+
+.accordion__chevron--black {
+  background: url("../img/chevron_black.png");
+  background-size: 35px;
+}
+.accordion__chevron {
+  background: url("../img/chevron_red.png");
+  background-size: 40px;
+
+}

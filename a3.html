@@ -2197,7 +2197,7 @@ epackYouthServicePlans=epackYouthServicePlans.replaceAll(", ",",");
 					<!-- Tab headings -->
 					<nav class="js-tabs-navigation tabs__navigation tabs__navigation--overflow tabs__navigation--reset" role="tablist">
 							<a href="#tariffs-tabs-prepaid" class="postpaidplans js-tabs-tab tabs__tab tabs__tab--active" aria-controls="tariffs-tabs-prepaid" role="tab" aria-selected="true" onclick="s_objectID=&quot;https://webshop.vodafone.hu/Samsung-Galaxy-A3-2017#tariffs-tabs-prepaid_1&quot;;return this.s_oc?this.s_oc(e):true">Előfizetéses</a>
-							<a href="a3_tuti.html" class="prepaidplans js-tabs-tab tabs__tab" aria-controls="tariffs-tabs-postpaid" role="tab" aria-selected="false" onclick="window.location.href='a3_tuti.html'">Feltöltőkártyás</a>
+							<a href="a3_tuti.html" class="prepaidplans js-tabs-tab tabs__tab" aria-controls="tariffs-tabs-postpaid_2" role="tab" aria-selected="false" onclick="window.location.href='a3_tuti.html'">Feltöltőkártyás</a>
 					</nav>
 
 					<div id="tariffs-tabs-prepaid" class="device-details--tariff-accordions js-tabs-content tabs__content no-gutter--bottom device-details--gray-background" data-category="CAT_VICPSTPC" style="display: block;">
@@ -4193,7 +4193,7 @@ epackYouthServicePlans=epackYouthServicePlans.replaceAll(", ",",");
 						</div>
 					</div>
 
-				 <div id="tariffs-tabs-postpaid" class="device-details--tariff-accordions js-tabs-content tabs__content no-gutter--bottom device-details--gray-background" data-category="CAT_VICPREPC" style="display: none;">
+				 <div id="tariffs-tabs-postpaid_2" class="device-details--tariff-accordions js-tabs-content tabs__content no-gutter--bottom device-details--gray-background" data-category="CAT_VICPREPC" style="display: none;">
 					 <div class="spring">
 						 <div>
 								<p class="text-center"><strong></strong></p>
@@ -5266,7 +5266,7 @@ epackYouthServicePlans=epackYouthServicePlans.replaceAll(", ",",");
 					<!-- Tab headings -->
 					<nav class="js-tabs-navigation tabs__navigation tabs__navigation--overflow tabs__navigation--reset" role="tablist">
 							<a href="#tariffs-tabs-dataprepaid" class="postpaidplans js-tabs-tab tabs__tab tabs__tab--active" aria-controls="tariffs-tabs-dataprepaid" role="tab" aria-selected="true" onclick="s_objectID=&quot;https://webshop.vodafone.hu/Samsung-Galaxy-A3-2017#tariffs-tabs-dataprepaid_1&quot;;return this.s_oc?this.s_oc(e):true">Előfizetéses</a>
-							<a href="#tariffs-tabs-postpaid" class="prepaidplans js-tabs-tab tabs__tab" aria-controls="tariffs-tabs-postpaid" role="tab" aria-selected="false" onclick="s_objectID=&quot;https://webshop.vodafone.hu/Samsung-Galaxy-A3-2017#tariffs-tabs-postpaid_2&quot;;return this.s_oc?this.s_oc(e):true">Feltöltőkártyás</a>
+							<a href="#tariffs-tabs-postpaid_2" class="prepaidplans js-tabs-tab tabs__tab" aria-controls="tariffs-tabs-postpaid_2" role="tab" aria-selected="false" onclick="s_objectID=&quot;https://webshop.vodafone.hu/Samsung-Galaxy-A3-2017#tariffs-tabs-postpaid_2_2&quot;;return this.s_oc?this.s_oc(e):true">Feltöltőkártyás</a>
 					</nav>
 
 					<div id="tariffs-tabs-dataprepaid" class="device-details--tariff-accordions js-tabs-content tabs__content no-gutter--bottom device-details--gray-background" style="display: block;">
@@ -5338,7 +5338,7 @@ Sajnáljuk, az eszköz ilyen típusú tarifával nem választható.
 							</div>
 
 					</div>
-					<div id="tariffs-tabs-postpaid" class="device-details--tariff-accordions js-tabs-content tabs__content no-gutter--bottom device-details--gray-background" style="display: none;">
+					<div id="tariffs-tabs-postpaid_2" class="device-details--tariff-accordions js-tabs-content tabs__content no-gutter--bottom device-details--gray-background" style="display: none;">
 	<div class="spring">
 									<!-- e-Pack and U26 -->
 									<div>
@@ -7535,6 +7535,13 @@ location.href = $(this).closest("a").attr("href");
 
 <script>
 	$(document).ready(function(){
+		var hash = window.location.hash;
+
+		if(hash == '#Vodafone-Tuti,black'){
+			
+			$('#tariffs-tabs-prepaid').css('display','block');
+		}
+	
 		/* 1-es bezár */
 		$('.servicePlansDetails#1').find('.chevron.js-accordion-heading.accordion__heading.accordion__heading--active').removeClass('accordion__heading--active');
 		$('.servicePlansDetails#1').find('.js-accordion-content.accordion__content.accordion__content--collapse.accordion__content--expanded').removeClass('accordion__content--expanded');

@@ -4193,7 +4193,7 @@ epackYouthServicePlans=epackYouthServicePlans.replaceAll(", ",",");
 											</div>
 										</div>
 
-									 <div id="tariffs-tabs-postpaid" class="device-details--tariff-accordions js-tabs-content tabs__content no-gutter--bottom device-details--gray-background" data-category="CAT_VICPREPC" style="display: none;">
+									 <div id="tariffs-tabs-postpaid_2" class="device-details--tariff-accordions js-tabs-content tabs__content no-gutter--bottom device-details--gray-background" data-category="CAT_VICPREPC" style="display: none;">
 										 <div class="spring">
 											 <div>
 													<p class="text-center"><strong></strong></p>
@@ -5366,7 +5366,7 @@ epackYouthServicePlans=epackYouthServicePlans.replaceAll(", ",",");
 
 																					</div>
 																				<div class="grid__item grid__item--gutter grid__item--sm-1/1 grid__item--md-1/2 grid__item--1/2 text-center-on-mobile margin-bottom-15">
-																						<a href="http://www.vodafone.hu/uzleti/kisvallalkozasok" class="link link--body" onclick="s_objectID=&quot;http://www.vodafone.hu/uzleti/kisvallalkozasok_5&quot;;return this.s_oc?this.s_oc(e):true"> Üzleti tarifáink</a> </div> </div>	</div> </div> </div>	</div>
+																						<a href="http://www.vodafone.hu/uzleti/kisvallalkozasok" class="link link--body" onclick="s_objectID=&quot;http://www.vodafone.hu/uzleti/kisvallalkozasok_5&quot;;return this.s_oc?this.s_oc(e):true"> Üzleti tarifáink</a> </div> </div>	</div> </div> </div>	</div> 
 									 <div class="dialog cartDeletePage epack_check_alert dialog_box" id="dialog23" style="top: 0;bottom:0;  display:none;">
 							<a href="#" class="js-dialog-close dialog__close epackWarnClose" onclick="s_objectID=&quot;https://webshop.vodafone.hu/Huawei-P8-lite-Black#_40&quot;;return this.s_oc?this.s_oc(e):true">
 								<svg class="icon dialog__icon">
@@ -8298,6 +8298,12 @@ h})}}};var d=document.getElementsByTagName("script")[0];d.parentNode.insertBefor
 
 <script>
 	$(document).ready(function(){
+		var hash = window.location.hash;
+
+		if(hash == '#Vodafone-Tuti,black'){
+			
+			$('#tariffs-tabs-prepaid').css('display','block');
+		}
 		/* 1-es bezár */
 		$('.servicePlansDetails#7').find('.chevron.js-accordion-heading.accordion__heading.accordion__heading--active').removeClass('accordion__heading--active');
 		$('.servicePlansDetails#7').find('.js-accordion-content.accordion__content.accordion__content--collapse.accordion__content--expanded').removeClass('accordion__content--expanded');

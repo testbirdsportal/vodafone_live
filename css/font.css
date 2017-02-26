@@ -27,15 +27,21 @@
 .tabs__tab--active {
   font-family: 'vodafone_bd';
 }
-.spring, .grid, .grid__item, #footer .col-4, #footer .col-3, #footer .col-5, #footer .portlet-borderless-container, .hello {
+.spring, .grid, .grid__item, #footer .col-4, #footer .col-3, #footer .col-5, #footer .portlet-borderless-container, .hello, .tutitab
+ {
   font-family: 'vodafone_rg';
 }
 .voice_2, .voice_1, .voice_3, .voice_4, strong, .device-details--global .button--white-selected span {
   font-family: vodafone_bd;
 }
-
-
-
+.tutitab {
+  padding: 20px;
+  color: #333333;
+  font-size: 20px;
+}
+.afterred {
+  border-bottom: 2px solid red;
+}
 
 input[type='checkbox']:checked + .form__label--checkable::before {
   content: "";

@@ -2150,7 +2150,7 @@ epackYouthServicePlans=epackYouthServicePlans.replaceAll(", ",",");
 	                            </div>
 	                           	<div class="device-details__tariff-row accordion js-accordion js-accordion-radio accordion--radio margin-top-30 vdPrePostPlans" data-js="_accordion" id="voicePostpaidPlans" data-category="CAT_VICPSTPC">
 
-		<div class="accordion__item servicePlansDetails" id="1">
+		<div class="accordion__item servicePlansDetails " id="1">
 
 			<input type="hidden" value="handset" id="productCat">
 
@@ -3051,7 +3051,7 @@ epackYouthServicePlans=epackYouthServicePlans.replaceAll(", ",",");
 
 						<input type="radio" name="radio_bundletemp_name" value="/bundle/get-plans/product/000000000104034423/bundle/5" id="radio_5">
 							<!-- new chnages -->
-					           <div class="chevron js-accordion-heading accordion__heading accordion__heading--active" aria-expanded="true" tabindex="0">
+					           <div class="chevron js-accordion-heading accordion__heading " aria-expanded="false" tabindex="0">
 	    						 <div class="grid">
 
 													<div class="data_msg features_tag price_tag_border grid__item grid__item--sm-4/5 grid__item--md-1/4 grid__item--1/4 grid__item--middle hide--sm  bg-color-red">
@@ -8039,7 +8039,14 @@ epackYouthServicePlans=epackYouthServicePlans.replaceAll(", ",",");
 		}
 	}
 	</style>
-
+<script>
+	$(document).ready(function(){
+		$('.servicePlansDetails#1').find('.chevron.js-accordion-heading.accordion__heading.accordion__heading--active').removeClass('accordion__heading--active');
+		$('.servicePlansDetails#1').find('.js-accordion-content.accordion__content.accordion__content--collapse.accordion__content--expanded').removeClass('accordion__content--expanded');
+		$('.servicePlansDetails#1').find('.js-accordion-content.accordion__content').css('display','none');
+		
+	});
+</script>
 
 	<div data-js="_helpToaster" class="toaster toaster--small toaster--small--show slideUp" style="display: none;">
 	        <h2 class="heading heading--4 no-gutter--all">Segíthetünk? Hívd a 1401-et!</h2>

@@ -7394,7 +7394,27 @@ location.href = $(this).closest("a").attr("href");
 <script src="https://webshop.vodafone.hu:443/static/_ui/desktop/theme-vodafone/v1.1/js/device-list-view-toggle.js"></script>
 
 
-
+<script>
+	$(document).ready(function(){
+		/* 1-es bezár */
+		$('.servicePlansDetails#1').find('.chevron.js-accordion-heading.accordion__heading.accordion__heading--active').removeClass('accordion__heading--active');
+		$('.servicePlansDetails#1').find('.js-accordion-content.accordion__content.accordion__content--collapse.accordion__content--expanded').removeClass('accordion__content--expanded');
+		$('.servicePlansDetails#1').find('.js-accordion-content.accordion__content').css('display','none');
+		
+		/* 5-ös bezár */
+		$('.servicePlansDetails#5').find('.chevron.js-accordion-heading.accordion__heading.accordion__heading--active').removeClass('accordion__heading--active');
+		$('.servicePlansDetails#5').find('.js-accordion-content.accordion__content.accordion__content--collapse.accordion__content--expanded').removeClass('accordion__content--expanded');
+		$('.servicePlansDetails#5').find('.js-accordion-content.accordion__content').css('display','none');
+		
+		/* 3-as kinyit */
+		$('.servicePlansDetails#3').find('.chevron.js-accordion-heading.accordion__heading').addClass('accordion__heading--active');
+		$('.servicePlansDetails#3').find('.js-accordion-content.accordion__content.accordion__content--collapse').addClass('accordion__content--expanded');
+		$('.servicePlansDetails#3').find('.js-accordion-content.accordion__content').css('display','block');
+		
+	});
+	
+	
+</script>
 
 
 

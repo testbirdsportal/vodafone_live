@@ -19,7 +19,13 @@
   font-family: 'vodafone_lt';
 }
 
-
+.header {
+  position: fixed !important;
+  width: 100% !important;
+  left: 0px !important;
+  margin-top: -1px !important;
+  z-index: 100000000000 !important;
+}
 
 .tabs__tab, .device-details__tariff-row .accordion__heading--active .button--tariff span {
   font-family: 'vodafone_rg';

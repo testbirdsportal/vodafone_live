@@ -2594,7 +2594,7 @@ epackYouthServicePlans=epackYouthServicePlans.replaceAll(", ",",");
 				           <div class="chevron js-accordion-heading accordion__heading" aria-expanded="false" tabindex="0">
     						 <div class="grid">
 
-												<div class="data_msg features_tag price_tag_border grid__item grid__item--sm-4/5 grid__item--md-1/4 grid__item--1/4 grid__item--middle hide--sm  bg-color-red">
+												<div style="display: block !important; " class="data_msg features_tag price_tag_border grid__item grid__item--sm-4/5 grid__item--md-1/4 grid__item--1/4 grid__item--middle hide--sm  bg-color-red">
 													<div class="device__tariff__check_2  device-details__tariff-row-padding-wrapper" style="height: 145px;">
 														<div class="vertical-center">
 														 <p class="heading heading--4 heading--regular no-gutter--all">
@@ -8317,11 +8317,11 @@ document.getElementById(reviewTimeId).innerHTML=timeLapse;
 		var hash = window.location.hash;
 
 		if(hash == '#Vodafone-Tuti,black'){
-			
+
 			$('#tariffs-tabs-prepaid').css('display','block');
 		}
-	
-	
+
+
 		/* 3-as kinyit */
 		$('.servicePlansDetails#1').find('.chevron.js-accordion-heading.accordion__heading').addClass('accordion__heading--active');
 		$('.servicePlansDetails#1').find('.js-accordion-content.accordion__content.accordion__content--collapse').addClass('accordion__content--expanded');
